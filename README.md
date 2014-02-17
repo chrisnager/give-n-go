@@ -1,4 +1,4 @@
-![Give 'n' Go logo](//25.media.tumblr.com/avatar_881379c2831a_128.png "Give 'n' Go logo")
+![Give 'n' Go logo](http://25.media.tumblr.com/avatar_881379c2831a_128.png "Give 'n' Go logo")
 
 # Give 'n' Go
 
