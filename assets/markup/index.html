@@ -209,6 +209,36 @@
                     </div>
                     {/block:IfNotCollapseNavigation}
 
+<style>
+.carbonad {
+    margin: 30px auto 0;
+    border: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: none;
+}
+.carbonad-text,
+.carbonad-tag {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+}
+.carbonad-text,
+.carbonad-tag {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.carbonad-tag {
+    text-align: left;
+}
+
+.carbonad-text a,
+.carbonad-tag a {
+  color: white;
+}
+</style>
+
+<div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/59808/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+
                     <div class="back-to-top"><a class="top" href="#"></a></div>
                 </header>
             </div>
@@ -471,7 +501,7 @@
                 </div>
                 {/block:Pagination}
                 {/block:IndexPage}
-                <small class="shout-out">&copy; 2013 Chris Nager &nbsp;&middot;&nbsp; Crafted by <a href="//twitter.com/chrisnager">@ChrisNager</a> &nbsp;&middot;&nbsp; Follow <a href="//twitter.com/give_n_go_">@give_n_go_</a> on Twitter</small>
+                <small class="shout-out">&copy; 2013<span class="copyright-current-year"></span> Chris Nager &nbsp;&middot;&nbsp; Crafted by <a href="//twitter.com/chrisnager">@chrisnager</a> &nbsp;&middot;&nbsp; Follow <a href="//twitter.com/give_n_go_">@give_n_go_</a> on Twitter</small>
             </footer>
         </section>
         <script>
@@ -486,17 +516,10 @@
         <!-- <script src="http://static.tumblr.com/vr9xgox/Azhmnml1q/jquery.masonry.min.js"></script> -->
         <script src="http://static.tumblr.com/vr9xgox/s5Pmq1ixq/main-min.js"></script>
 
-        <script src="http://codepen.io/assets/embed/ei.js?r=1"></script>
-
         <script>
-            function scale() {
-                console.log( 'yo' );
-                $( '.post .attribution-tags .tag:contains("codepen--xs")' ).parents( '.post' ).find( 'iframe iframe' ).addClass( 'codepen--xs' );
-                $( '.post .attribution-tags .tag:contains("codepen--s")' ).parents( '.post' ).find( 'iframe iframe' ).addClass( 'codepen--s' );
-            }
-
-            setTimeout( scale, 5000 );
+            document.getElementsByClassName('copyright-current-year')[0].innerHTML = '-' + new Date().getFullYear();
         </script>
+        <script src="http://codepen.io/assets/embed/ei.js?r=1"></script>
 
         {block:IfGoogleAnalyticsID}
             <script>
