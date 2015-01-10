@@ -38,16 +38,20 @@ html {
 }
 
 .blog-title > .sub-title a {
-    border-bottom: 1px dotted;
-    border-bottom-color: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 20px;
+    display: block;
+    font-size: 20px;
     text-decoration: none;
+    color: #e55c4e;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .blog-title > .sub-title a:hover,
 .blog-title > .sub-title a:focus {
-    border-bottom-style: solid;
+    background-color: white;
 }
 
 
@@ -93,13 +97,21 @@ html {
 
 .photo .photo-wrapper {
     border-radius: 0;
-    padding-top: 31px;
+    padding-top: 30px;
     padding-bottom: 16px;
+    display: block;
+    box-shadow: none;
 }
 
 .photo .photo-wrapper-inner {
     padding-top: 0;
     padding-bottom: 0;
+    display: block;
+}
+
+.photo .photo-wrapper-inner > a {
+    height: 298px;
+    overflow: hidden;
 }
 
 .photo .photo-wrapper + .caption {
@@ -130,6 +142,36 @@ html {
     opacity: 0.1;
 }
 
+.codepen--xs {
+    width: 400%;
+    height: 400%;
+    -webkit-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    transform: scale(0.25);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.codepen--s {
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.attribution-tags {
+    display: none !important;
+}
+
 footer .shout-out {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -149,6 +191,30 @@ footer .shout-out a {
 footer .shout-out a:hover,
 footer .shout-out a:focus {
     border-bottom-style: solid;
+}
+
+#footer-pagination {
+    text-align: center;
+}
+
+#footer-pagination > * {
+    border-radius: 2px;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: white;
+}
+
+#footer-pagination > a {
+    text-decoration: none;
+}
+
+#footer-pagination > a:hover,
+#footer-pagination > a:focus {
+    background-color: #f7f7f7;
+}
+
+figure:not(.high-res) img[src$='.gif'] {
+    margin: 0;
 }
 
 @media (min-width: 830px) {
