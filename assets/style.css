@@ -238,3 +238,61 @@ figure:not(.high-res) img[src$='.gif'] {
         float: right;
     }
 }
+
+
+
+/* Collections */
+.page--Collections .post {
+    padding: 0;
+    background-color: #E55C4E;
+}
+
+.page--Collections .post > h2 {
+    display: none;
+}
+
+.page--Collections .post > h2 + .body-text {
+    margin-top: 0;
+}
+
+.page--Collections .tabs {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 2px solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.page--Collections .tabs .tab {
+    margin-right: 5px;
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+.page--Collections .tabs .tab a {
+    border: 2px solid #222;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 20px;
+    display: block;
+    background: #fff;
+}
+
+.page--Collections .tabs .tab.is-active a {
+    border-bottom-color: transparent;
+    background-color: #afa;
+}
+
+.page--Collections .collection {
+    border-bottom: 1px solid;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.page--Collections .collection:nth-child(1) { background-color: #afa }
+.page--Collections .collection:nth-child(2) { background-color: #0cf }
+.page--Collections .collection:nth-child(3) { background-color: gold }
+.page--Collections .collection:nth-child(4) { background-color: #f43 }
